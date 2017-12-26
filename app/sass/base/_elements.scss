@@ -1,13 +1,21 @@
-button{
-  transition: 200ms ease;
-  cursor: pointer;
-  &:hover{
-    transform: scale(1.05);
-    transition: 200ms ease;
-
-  }
-}
-.clearfix{
+.clearfix {
   overflow: hidden;
   clear: both;
+}
+
+.button {
+  width: 185px;
+  height: 50px;
+  box-shadow: 4px 6px 21px rgba(0, 0, 0, 0.45);
+  border-radius: 25px;
+  background-color: #f1af1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #181b24;
+  font-family: $gilRoyHeavy;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 3.4px;
 }
