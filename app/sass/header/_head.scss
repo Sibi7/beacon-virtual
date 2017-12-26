@@ -33,16 +33,17 @@
   }
   &__no-app {
     color: #f1af1b;
-    font-family: $gilRoyExtraB;
-    font-size: 33px;
     padding-left: 63px;
     display: flex;
     position: relative;
     width: 100%;
     margin-top: 150px;
     margin-bottom: 50px;
-    p{
+    p {
       margin: 0;
+      letter-spacing: 1.7px;
+      font-size: 33px;
+      font-family: $gilRoyExtraB;
     }
   }
   &__content {
@@ -54,31 +55,84 @@
       position: relative;
       display: block;
       float: left;
-      width: 631px;
+      width: calc(100% - 383px);
+      text-align: right;
       h1 {
-        font-size: 85px;
-        color: #fff;
+        font-size: 87px;
         width: 631px;
+        color: #fff;
         display: block;
-        float: left;
+        float: right;
         margin: 0;
         font-family: $gilRoyBlack;
         line-height: 73.29px;
         text-transform: uppercase;
-        position: absolute;
         span {
           font-family: $gilRoyMedium;
           letter-spacing: 0.71px;
           font-size: 48px;
         }
       }
+      p{
+        display: block;
+        float: right;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 38.83px;
+        letter-spacing: 0.66px;
+        width: 521px;
+        text-align: left;
+        font-family: $gilRoyReg;
+        margin-top: 45px;
+        margin-right: 10px;
+        span{
+          font-family: $gilRoyExtraB;
+        }
+      }
+      .disability{
+        display: block;
+        position: relative;
+        float: right;
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 80px;
+        a{
+          color: #ffffff;
+          font-family: $gilRoyBold;
+          font-size: 17px;
+          font-weight: 700;
+          letter-spacing: 0.42px;
+          display: inline-flex;
+          span{
+            color: #ffc000;
+          }
+        }
+        img{
+          width: 41px;
+          height: 53px;
+          object-fit: contain;
+        }
+      }
     }
     &--phone {
+      width: 203px;
       margin-right: 180px;
-      text-align: right;
       display: block;
-      float: right;
-
+      float: left;
+      text-align: center;
+      img {
+        position: relative;
+        top: -42px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+      .button{
+        top: -80px;
+        position: relative;
+      }
     }
   }
 }

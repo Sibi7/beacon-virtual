@@ -12,6 +12,7 @@ $gilRoyBlack: 'Gilroy-Black';
 $gilRoyMedium: 'Gilroy-Medium';
 $gilRoyExtraB: 'Gilroy-Extrabold';
 $gilRoyHeavy: 'Gilroy-Heavy';
+$gilRoyBold: 'Gilroy-Bold';
 
 
 @font-face {
@@ -57,6 +58,15 @@ $gilRoyHeavy: 'Gilroy-Heavy';
   url('../fonts/gilroy/Gilroy-Heavy.woff') format('woff'),
   url('../fonts/gilroy/Gilroy-Heavy.ttf') format('truetype'),
   url('../fonts/gilroy/Gilroy-Heavy.svg') format('svg');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('../fonts/gilroy/Gilroy-Bold.eot') format('embedded-opentype'),
+  url('../fonts/gilroy/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/gilroy/Gilroy-Bold.ttf') format('truetype'),
+  url('../fonts/gilroy/Gilroy-Bold.svg') format('svg');
   font-weight: normal;
 }
 

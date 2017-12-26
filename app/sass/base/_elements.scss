@@ -9,13 +9,18 @@
   box-shadow: 4px 6px 21px rgba(0, 0, 0, 0.45);
   border-radius: 25px;
   background-color: #f1af1b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  line-height: 49px;
+  text-align: center;
   color: #181b24;
   font-family: $gilRoyHeavy;
   font-size: 17px;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 3.4px;
+  transition: 300ms ease;
+  &:hover{
+    color: #fff;
+    transition: 300ms ease;
+  }
 }
