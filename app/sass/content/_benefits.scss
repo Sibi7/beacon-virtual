@@ -1,0 +1,66 @@
+.benefits{
+  width: 100%;
+  position: relative;
+  display: flex;
+  &__left{
+    display: block;
+    float: left;
+    width: 390px;
+    position: relative;
+    h2{
+      margin: 0;
+      color: #1b1613;
+      font-family: $gilRoyBlack;
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      line-height: 62.55px;
+      margin-left: 48px;
+    }
+    &--text-wrap{
+      display: block;
+      position: relative;
+      margin-left: 80px;
+      p{
+        margin: 0;
+        color: #1b1613;
+        font-size: 27px;
+        line-height: 36.55px;
+       span{
+         font-size: 53px;
+       }
+      }
+    }
+    .button{
+      margin-left: 99px;
+      margin-top: 50px;
+    }
+  }
+  &__right{
+    display: flex;
+    float: left;
+    width: calc(100% - 390px);
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &--item{
+      display: flex;
+      flex-direction: column;
+      width: 33.333%;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 93px;
+      text-align: center;
+      p{
+        margin-top: 33px;
+        width: 223px;
+      }
+      img{
+        width: 86px;
+        height: 86px;
+        object-fit: contain;
+      }
+
+    }
+  }
+}

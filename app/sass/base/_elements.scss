@@ -3,6 +3,7 @@
   clear: both;
 }
 
+
 .button {
   width: 185px;
   height: 50px;
@@ -19,6 +20,11 @@
   margin: 0;
   letter-spacing: 3.4px;
   transition: 300ms ease;
+  border: 1px solid transparent;
+  outline: none;
+  &:focus{
+    border: 1px solid #f1af1b;
+  }
   &:hover{
     color: #fff;
     transition: 300ms ease;
