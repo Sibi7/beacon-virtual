@@ -1,0 +1,80 @@
+.partners {
+  display: flex;
+  width: 100%;
+  position: relative;
+  background: url("../img/partners-bg.jpg") no-repeat center center;
+  background-size: cover;
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(31, 31, 31, .7);
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    h2 {
+      color: #ffffff;
+      font-family: $gilRoyBlack;
+      font-size: 48px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin: 65px 0;
+      z-index: 2;
+    }
+  }
+  .partners-carousel{
+    z-index: 3;
+  }
+  &__wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 65px;
+    z-index: 2;
+    .item{
+      width: 166px;
+      height: 50px;
+      position: relative;
+      margin: 0 42px;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .owl-nav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    .owl-prev{
+      position: absolute;
+      left: 0;
+      width: 39px;
+      height: 39px;
+      color: transparent;
+      background: url("../img/icons/arrow-left.png") no-repeat center center;
+      background-size: contain;
+    }
+    .owl-next{
+      position: absolute;
+      right: 0;
+      width: 39px;
+      height: 39px;
+      color: transparent;
+      background: url("../img/icons/arrow-right-w.png") no-repeat center center;
+      background-size: contain;
+    }
+  }
+}
