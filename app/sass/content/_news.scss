@@ -5,20 +5,21 @@
   background: #fbfbfb;
   &__header {
     display: flex;
-    margin-top: 189px;
+    margin-top: 141px;
     padding-left: 48px;
     padding-right: 23px;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 42px;
+    margin-bottom: -48px;
     .title-wrap {
       width: 575px;
       position: relative;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+
       h2, span {
         color: #1b1613;
         font-family: $gilRoyBlack;
@@ -39,6 +40,7 @@
     width: 100%;
     position: relative;
     flex-direction: row;
+    bottom: -90px;
     .item {
       width: 367px;
       height: 490px;

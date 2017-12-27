@@ -15,7 +15,7 @@ $(document).ready(function () {
                 items:1
             }
         }
-    })
+    });
 
     $('.partners-carousel').owlCarousel({
         loop:true,
@@ -32,5 +32,14 @@ $(document).ready(function () {
                 items:1
             }
         }
-    })
+    });
+
+    $(document).on('click', '.header__menu .scroll', function (event) {
+        event.preventDefault();
+        var href = $(this).attr('href');
+        var target = $(href);
+        var top = target.offset().top;
+        $('html,body').animate({scrollTop: top}, 1000);
+        return false;
+    });
 });
