@@ -44,6 +44,16 @@
       .phone {
         width: 305px;
         position: relative;
+        z-index: 1;
+        &:after{
+          content: '';
+          position: absolute;
+          background: url(../img/sircle.png) no-repeat 50%;
+          width: 470px;
+          height: 470px;
+          left: -84px;
+          top: -117px;
+        }
         img {
           position: absolute;
           width: 100%;
@@ -125,6 +135,7 @@
           color: #1b1613;
           font-family: $gilRoyMedium;
           font-size: 21px;
+          z-index: 2;
           img{
             width: 28px;
             height: 20px;

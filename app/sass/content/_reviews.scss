@@ -1,0 +1,80 @@
+.reviews {
+  display: flex;
+  position: relative;
+  width: 100%;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 148px;
+    margin-bottom: 80px;
+    &--center {
+      width: 294px;
+      height: 294px;
+      box-shadow: 7px 12px 24px rgba(0, 0, 0, 0.22);
+      background-color: #f9f9f9;
+      position: relative;
+      img {
+        transform: translate(-50%, 0);
+        left: 50%;
+        position: absolute;;
+        bottom: 0;
+        width: 211px;
+        height: 378px;
+        object-fit: contain;
+      }
+    }
+    &--right {
+      width: 424px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      h2 {
+        color: #1b1613;
+        font-size: 19px;
+        line-height: 23.55px;
+        letter-spacing: 0.47px;
+        margin-bottom: 0;
+        span {
+          font-family: $gilRoyBold;
+        }
+      }
+      p {
+        font-size: 17px;
+        color: #1b1613;
+        margin: 35px 0;
+        letter-spacing: 0.42px;
+        line-height: 23.55px;
+      }
+    }
+  }
+  .owl-nav {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100%;
+    .owl-next {
+      position: absolute;
+      right: 117px;
+      color: #1b1613;
+      bottom: 80px;
+      font-size: 17px;
+      line-height: 23.55px;
+      letter-spacing: 0.42px;
+      &:after {
+        content: '';
+        position: absolute;
+        background: url(../img/icons/right-arrow.png) no-repeat;
+        height: 39px;
+        width: 39px;
+        background-size: contain;
+        right: -53px;
+        top: -9px;
+      }
+    }
+    .owl-prev {
+      display: none;
+    }
+  }
+}
