@@ -128,7 +128,7 @@
     p {
       margin: 0;
       letter-spacing: 1.7px;
-      font-size: 33px;
+      font-size: 32px;
       font-family: $gilRoyExtraB;
     }
   }
@@ -220,6 +220,10 @@
           font-weight: 700;
           letter-spacing: 0.42px;
           display: inline-flex;
+          @include breakpoint(max-width 660px){
+            font-size: 13px;
+            display: inline-block;
+          }
           span {
             color: #ffc000;
           }
