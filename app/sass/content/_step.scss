@@ -1,5 +1,6 @@
 .step {
-  display: flex;
+  display: block;
+  float: left;
   width: 100%;
   background: #f1af1b;
   position: relative;
@@ -11,12 +12,20 @@
     padding-left: 98px;
     flex-wrap: wrap;
     flex-direction: column;
+    @include breakpoint(max-width 992px) {
+      padding-left: 0;
+    }
     &--header {
       display: flex;
       position: relative;
       width: 100%;
       align-items: center;
       padding-left: 82px;
+      @include breakpoint(max-width 992px) {
+        flex-direction: column;
+        align-items: left;
+        padding-left: 0;
+      }
       h2 {
         margin: 0;
         color: #1b1613;
@@ -25,6 +34,18 @@
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 1.2px;
+        @include breakpoint(max-width 992px){
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+        }
+        @include breakpoint(max-width 770px){
+          font-size: 55px;
+        }
+        @include breakpoint(max-width 660px){
+          font-size: 40px;
+          margin-bottom: 30px;
+        }
       }
       p {
         margin: 0;
@@ -33,6 +54,13 @@
         line-height: 26px;
         max-width: 635px;
         padding-left: 10px;
+        @include breakpoint(max-width 992px){
+          padding-left: 0;
+          display: block;
+          margin: 0 auto;
+
+          text-align: center;
+        }
       }
     }
     &--body {
@@ -45,7 +73,17 @@
         width: 305px;
         position: relative;
         z-index: 1;
-        &:after{
+        @include breakpoint(max-width 992px){
+          width: 197px;
+          left: 0;
+          top: 76px;
+          position: absolute;
+          z-index: 1;
+        }
+        @include breakpoint(max-width 770px){
+          display: none;
+        }
+        &:after {
           content: '';
           position: absolute;
           background: url(../img/sircle.png) no-repeat 50%;
@@ -69,11 +107,33 @@
         position: relative;
         left: -20px;
         margin-bottom: 123px;
+        @include breakpoint(max-width 770px){
+          left: inherit;
+          font-size: 50px;
+          display: block;
+          text-align: center;
+          margin: 30px auto;
+        }
+        @include breakpoint(max-width 660px){
+          font-size: 30px;
+        }
       }
       .step-1 {
         position: relative;
         width: calc(100% - 305px);
         padding-left: 154px;
+        @include breakpoint(max-width 992px){
+          width: calc(100% - 200px);
+          padding-left: 80px;
+          margin-top: 40px;
+        }
+        @include breakpoint(max-width 770px){
+          width: 100%;
+        }
+        @include breakpoint(max-width 500px){
+          padding-left: 0;
+          margin-top: 130px;
+        }
         h3 {
           color: #1b1613;
           font-family: $gilRoyExtraB;
@@ -83,6 +143,7 @@
           line-height: 26px;
           margin: 0;
           margin-bottom: 36px;
+
           &:after {
             content: '';
             position: absolute;
@@ -92,19 +153,27 @@
             background-size: contain;
             top: -61px;
             left: -75px;
+            @include breakpoint(max-width 500px){
+              left: 50%;
+              top: -134px;
+              transform: translateX(-50%);
+            }
           }
           span {
             font-family: $gilRoyMedium;
           }
         }
-        p{
+        p {
           width: 469px;
           color: #1b1613;
           font-size: 20px;
           line-height: 26px;
           margin: 0 0 74px 0;
+          @include breakpoint(max-width 770px){
+            width: 100%;
+          }
         }
-        a{
+        a {
           color: #1b1613;
           font-size: 39px;
           display: flex;
@@ -113,20 +182,20 @@
           justify-content: flex-end;
           margin-bottom: 60px;
 
-          span{
+          span {
             width: 51px;
             height: 51px;
             padding-left: 18px;
             position: relative;
             display: inline-block;
-            img{
+            img {
               width: 100%;
               height: 100%;
               object-fit: contain;
             }
           }
         }
-        .play{
+        .play {
           display: flex;
           position: absolute;
           bottom: -64px;
@@ -136,7 +205,16 @@
           font-family: $gilRoyMedium;
           font-size: 21px;
           z-index: 2;
-          img{
+          @include breakpoint(max-width 770px){
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+          }
+          @include breakpoint(max-width 550px){
+            display: none;
+          }
+          img {
             width: 28px;
             height: 20px;
             margin-left: 35px;

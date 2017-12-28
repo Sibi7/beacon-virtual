@@ -1,7 +1,8 @@
 .news {
   position: relative;
   width: 100%;
-  display: flex;
+  display: block;
+  float: left;
   background: #fbfbfb;
   &__header {
     display: flex;
@@ -41,6 +42,9 @@
     position: relative;
     flex-direction: row;
     bottom: -90px;
+    @include breakpoint(max-width 992px){
+      flex-wrap: wrap;
+    }
     .item {
       width: 367px;
       height: 490px;
@@ -49,6 +53,11 @@
       cursor: pointer;
       overflow: hidden;
       transition: 300ms ease;
+      @include breakpoint(max-width 1200px){
+        width: 46%;
+        margin: 0 2%;
+        margin-bottom: 20px;
+      }
       &:hover img{
         transform: scale(1.1);
         transition: 300ms ease;
