@@ -1,5 +1,6 @@
 .header {
-  display: flex;
+  display: block;
+  float: left;
   width: 100%;
   position: relative;
   background: url("../img/header-bg.jpg") no-repeat center center;
