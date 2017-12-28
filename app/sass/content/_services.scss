@@ -7,11 +7,18 @@
     width: 100%;
     margin-top: 80px;
     margin-bottom: 90px;
+    @include breakpoint(max-width 992px){
+      width: 100%;
+      flex-direction: column;
+      margin-top: 25px;
+    }
     &--left {
       width: 50%;
       display: flex;
       position: relative;
-
+      @include breakpoint(max-width 992px){
+        width: 100%;
+      }
       .player {
         width: 100%;
         position: relative;
@@ -55,11 +62,16 @@
       width: 50%;
       padding-left: 22px;
       padding-right: 19px;
+      @include breakpoint(max-width 992px){
+        width: 100%;
+        margin-top: 30px;
+      }
       .wrap{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         h2{
           color: #1b1613;
           font-family: $gilRoyBlack;
@@ -69,6 +81,10 @@
           text-transform: uppercase;
           letter-spacing: 1.2px;
           margin: 0;
+          @include breakpoint(max-width 1200px){
+            font-size: 35px;
+          }
+
           &:after{
             content: 'About';
             position: absolute;
@@ -82,6 +98,11 @@
             text-transform: uppercase;
             letter-spacing: 1.2px;
             transform: rotate(-90deg);
+            @include breakpoint(max-width 992px){
+              left: -22px;
+              top: 111px;
+              font-size: 35px;
+            }
           }
         }
       }
@@ -95,6 +116,12 @@
         letter-spacing: 0.4px;
         max-width: 475px;
         margin: 26px 0;
+        @include breakpoint(max-width 1200px){
+          padding-left: 62px;
+        }
+        @include breakpoint(max-width 992px){
+          max-width: inherit;
+        }
       }
     }
   }
