@@ -8,6 +8,9 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
+            320: {
+                items: 1
+            },
             600: {
                 items: 1
             },
@@ -25,11 +28,17 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            600: {
+            320: {
                 items: 1
             },
+            600: {
+                items: 2
+            },
             1000: {
-                items: 1
+                items: 3
+            },
+            1200: {
+                items: 4
             }
         }
     });
