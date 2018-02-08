@@ -1,9 +1,10 @@
 $(document).ready(function () {
-    $('.reviews-carousel').owlCarousel({
+    $('.review-wrap').owlCarousel({
         loop: true,
         margin: 0,
         nav: true,
         navText: ["", "next review"],
+        autoHeight:true,
         responsive: {
             0: {
                 items: 1
