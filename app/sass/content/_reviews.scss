@@ -6,8 +6,9 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin-top: 238px;
+    margin-top: 180px;
     margin-bottom: 80px;
 
     @include breakpoint(max-width 992px) {
@@ -19,7 +20,7 @@
 
     &--center {
       width: 294px;
-      height: 294px;
+      height: 380px;
       //box-shadow: 7px 12px 24px rgba(0, 0, 0, 0.22);
       //background-color: #f9f9f9;
       background: #fff;
@@ -108,6 +109,7 @@
   &__wrap{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 .owl-height{

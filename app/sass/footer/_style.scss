@@ -243,6 +243,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-wrap: wrap;
      flex-direction: row;
      padding: 50px 0;
      text-align: center;
@@ -255,6 +256,17 @@
        @include breakpoint(max-width 992px){
          width: 100%;
          font-size: 33px;
+       }
+     }
+     &--link{
+       display: flex;
+       justify-content: center;
+       width: 100%;
+       a{
+         font-size: 19px;
+         margin: 42px 21px 36px;
+         display: inline-block;
+         color: #000;
        }
      }
    }
